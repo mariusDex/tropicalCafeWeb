@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Café - Join us</title>
+    <link type="text/css" rel="stylesheet" href="css/Join-us.css">
+    <link type="text/css" rel="stylesheet" href="css/Join-us-Responsive.css">
+    <link rel="icon" href="./img/logoTropical2.png">
+    <script src="https://kit.fontawesome.com/0ff74634d8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Imports necesarios para poder usar los iconos fast fa fonts
+      link a la pagnia de los iconos : https://fontawesomeicons.com/ -->
+    
+</head>
+
+<body>
+  <!-- Este NAV lo tendrán TODAS las páginas -->
+    <div>
+      <nav>
+        <ul>
+          <li class="logo"><a href="entry.html"><img src="./img/logoTropical.png" /></a></li>
+          <li class="items"><a href="entry.html">Home</a></li>
+          <li class="items"><a href="catalogue.html">Catalogue</a></li>
+          <li class="items"><a href="about-us.html">About us</a></li>
+          <li class="items" id="joinUs" ><a href="JoinUs.html">Join us</a></li>
+          <li class="items" style="width:70px"><a href="register.html"><input type="button" id="signUp" value="SIGN UP"
+                class="botonLog" /></a></li>
+                
+          <li class="items"><a href="login.html"><input type="button" id="logIn"  value="LOG IN" class="botonLog" /></a></li>
+          <li class="items"><a href="user-area.html">
+            <div id="contenedorBotones">
+            
+          </div>
+           
+          </a></li>
+        
+          <li class="btn"><a href="#"><i class='fas fa-bars' style='color:#000000'></i></a></li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+
+
+
+    
+    
+    
+
+
+    <div id="containerMain" >
+
+      
+      <br>
+      <br>
+       <div class="card" id="card1">
+         
+         <h2>Barista</h2>  
+         <br>
+
+         <h4>Full time job</h4>
+         <p>$18.000 / year.</p>
+         <br>
+         
+         <input type="button" value="MORE INFO" class="botonInfo" onclick="openInfo(1);"/>
+         
+       </div>
+       
+       <div class="infoCard" id="infoCard1">
+        <h3>Description</h3>
+        <br>
+        <p>• Full time bartender service in Tropical Café. </p>
+        <p>• Undefinded contract from 2nd month.</p>
+        
+        <br>
+
+        <h3>Salary</h3>
+        <br>
+        <p>• $19.000 / year</p>
+        <p>• Monthly payments (Bank transfer).</p>
+        <p>• Two bonuse payments (December and June).</p>
+
+        <br>
+
+        <h3>Starting date.</h3>
+        <br>
+        <p>• Junet 6h, 2022.</p>
+
+        <br>
+
+        <h3>Responsibilities</h3>
+        <br>
+        <p>• Prepare different types of orders. </p>
+        <p>• Control the stock of the establishment. </p>
+        <p>• Try to innovate and create new coffees.</p>
+        
+        <br>
+
+        <h3>Requirements</h3>
+        <br>
+        <p>• Experience : at least 2 years in bartending area.</p>
+        <p>• High School Certificate (at least)</p>
+
+        <br>
+
+        <h3>More</h3>
+        <br>
+        <p>Thanks to the professionalism of our workers and the environment within the company,
+           both professional and personal evolution are possible.</p>
+           <br>
+        <a href="Risks.html" id="risksButton">See job risks</a>
+        
+        <br>
+        <br>
+        <h5> Paste your CV. We'll call you !</h5>
+        <br>
+        <input class="botonInfo" type="file" id="uploadFile"/><br><br>
+        <div style="width:100%;">
+        
+        <input class="botonInfo" value="HIRE ME!"  id="hireButton" type="button" onclick="addCandidato(1)" />
+      
+      <i class="fas fa-x"  class="botonCerrarInfo"  style="margin-left: 70%;cursor: pointer;" onclick="closeInfo(1);"></i>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="card">
+         
+        <h2>Advanced technician in multimedia application development</h2>  
+        <br>
+
+        <h4>Full time job</h4>
+        <p>$27.000 / year.</p>
+        <br>
+        <input type="button" value="MORE INFO" class="botonInfo" onclick="openInfo(2);"/>
+        
+      </div>
+      
+      <div class="infoCard" id="infoCard2">
+       <h3>Description</h3>
+       <br>
+       <p>• Full time web maintenance service in Tropical Café networks.</p>
+       <p>• Undefinded contract from 2nd month.</p>
+       <p>• ⅔ of the weekly shift dedicated to work in company’s facilities.</p>
+       <p>• ⅓ of the weekly shift dedicated to on-line work.</p>
+       <p>• Expedition to provider’s storehouse once a week for technical checking.</p>
+       <br>
+
+       <h3>Salary</h3>
+       <br>
+       <p>• $27.000 / year</p>
+       <p>• Monthly payments (Bank transfer).</p>
+       <p>• Two bonuse payments (December and June).</p>
+
+       <br>
+
+       <h3>Starting date.</h3>
+       <br>
+       <p>• June 8th, 2022.</p>
+
+       <br>
+
+       <h3>Responsibilities</h3>
+       <br>
+       <p>• Website and app maintenance </p>
+       <p>• Database maintenance </p>
+       <p>• Study all related to risk prevention and establish new methods and dynamics</p>
+       <br>
+
+       <h3>Requirements</h3>
+       <br>
+       <p>• Experience : at least 2 years in bartending area.</p>
+       <p>• Knowledge in : HTML5,CSS,JS,Java, PHP and SQL (MySQL)</p>
+       <p>• High School Certificate (at least)</p>
+
+       <br>
+       
+       <h3>Other required skills</h3>
+       <br>
+       <p>• Ability to work as a team</p>
+       <p>• Be sociable and have a formal way of communicating in the professional area</p>
+       <br>
+
+       <h3>More</h3>
+       <br>
+       <p>Thanks to the professionalism of our workers and the environment within the company,
+          both professional and personal evolution are possible.</p>
+          <br>
+       <a href="Risks.html" id="risksButton">See job risks</a>
+       
+       <br>
+       <br>
+       <h5> Paste your CV. We'll call you !</h5>
+       <br>
+       <input class="botonInfo" type="file" id="uploadFile"/><br><br>
+       <div style="width:100%;">
+       <input class="botonInfo" value="HIRE ME!"  id="hireButton" type="button" onclick="addCandidato(2)"/>
+       <i class="fas fa-x"  class="botonCerrarInfo"  style="margin-left: 70%;cursor: pointer;" onclick="closeInfo(2);"></i>
+       </div>
+     </div>
+     <br>
+     <br>
+     <div class="card">
+         
+      <h2>Grocer</h2>  
+      <br>
+
+      <h4>Full time job</h4>
+      <p>$22.000 / year.</p>
+      <br>
+      <input type="button" value="MORE INFO" class="botonInfo" onclick="openInfo(3);"/>
+      
+    </div>
+    
+    <div class="infoCard" id="infoCard3">
+     <h3>Description</h3>
+     <br>
+     <p>• Full time grocer service in Tropical Café's facilities. </p>
+     <p>• Undefinded contract from 2nd month.</p>
+     
+     <br>
+
+     <h3>Salary</h3>
+     <br>
+     <p>• $22.000 / year</p>
+     <p>• Monthly payments (Bank transfer).</p>
+     <p>• Two bonuse payments (December and June).</p>
+
+     <br>
+
+     <h3>Starting date.</h3>
+     <br>
+     <p>• Junet 6th, 2022.</p>
+
+     <br>
+
+     <h3>Responsibilities</h3>
+     <br>
+     <p>• Control all the stock of the warehouse.</p>
+     <p>• Monitor all the packages received at the establishment.</p>
+     <p>• Have organized and noted the warehouse</p>
+     
+     <br>
+
+     <h3>Requirements</h3>
+     <br>
+     <p>• Experience : at least 2 years in bartending area.</p>
+     <p>• High School Certificate (at least)</p>
+     
+
+     <br>
+
+     <h3>More</h3>
+     <br>
+     <p>Thanks to the professionalism of our workers and the environment within the company,
+        both professional and personal evolution are possible.</p>
+        <br>
+     <a href="Risks.html" id="risksButton">See job risks</a>
+     
+     <br>
+     <br>
+     <h5> Paste your CV. We'll call you !</h5>
+     <br>
+     <input class="botonFile" type="file" id="uploadFile"/><br><br>
+     <div style="width:100%;">
+     <input class="botonInfo" value="HIRE ME!"  id="hireButton" type="button" onclick="addCandidato(3)" />
+     <i class="fas fa-x"  class="botonCerrarInfo"  style="margin-left: 70%;cursor: pointer;" onclick="closeInfo(3);"></i>
+     </div>
+   </div>
+
+      
+      
+      </div>
+
+
+
+    
+    
+    
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="entry.html">
+              <img src="img/logoTropical.png" alt="Logo Tropical">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>CONTACT US</h2>
+          <p>+1 408-736-1495</p>
+          <p>tropicalcoffe@tropical.com</p>
+        </div>
+        <div class="box">
+          <h2>FOLLOW US</h2>
+          <div class="red-social">
+            <a href="#"><i class='fa-brands fa-twitter' ></i></a>
+            <a href="#"><i class='fa-brands fa-facebook'  ></i></a>
+            <a href="#"><i class='fa-brands fa-instagram'  ></i></a>
+            <a href="#"><i class='fa-brands fa-whatsapp'  ></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy;2022 Tropical Café S.L.- All Rigths Reserved To.</small>
+      </div>
+    </footer>
+
+    
+    
+    
+    <!-- A PARTIR DE AQUÍ EN CADA PÁGINA SERÁ DIFERENTE -->
+
+
+
+      
+      <script src="./js/nav.js"></script>
+      <script src="./js/entry.js"></script>
+      <script src="./js/JoinUs.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      
+      <script src="./js/localStorage.js"></script>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropical Café - About us</title>
+  <link type="text/css" rel="stylesheet" href="./css/about-us.css">
+  <link type="text/css" rel="stylesheet" href="./css/about-us-responsive.css">
+  <link rel="icon" href="./img/logoTropical2.png">
+  <!-- Imports necesarios para poder usar los iconos fast fa fonts
+      link a la pagnia de los iconos : https://fontawesomeicons.com/ -->
+      <script src="https://kit.fontawesome.com/0ff74634d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="cafesIntroDisplay();">
+  <!-- Este NAV lo tendrán TODAS las páginas -->
+  <div>
+    <nav>
+      <ul>
+        <li class="logo"><a href="entry.html"><img src="./img/logoTropical.png" /></a></li>
+        <li class="items"><a href="entry.html">Home</a></li>
+        <li class="items"><a href="catalogue.html">Catalogue</a></li>
+        <li class="items"><a href="about-us.html">About us</a></li>
+        <li class="items" id="joinUs" ><a href="JoinUs.html">Join us</a></li>
+        <li class="items" style="width:70px"><a href="register.html"><input type="button" id="signUp" value="SIGN UP"
+              class="botonLog" /></a></li>
+              
+        <li class="items"><a href="login.html"><input type="button" id="logIn"  value="LOG IN" class="botonLog" /></a></li>
+        <li class="items"><a href="user-area.html">
+          <div id="contenedorBotones">
+          
+          </div>
+         
+        </a></li>
+      
+        <li class="btn"><a href="#"><i class='fas fa-bars' style='color:#000000'></i></a></li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+  <div class="about">
+    <div class="objective">
+      <h1>OUR OBJECTIVE</h1>
+      <div class="objectiveItems">
+        <p class="objectiveText">
+          We are an entity that tries to satisfy all our customers with the best coffees and infusions, so they can
+          relax
+          and fully savor the different types of flavors that we offer. Tropical coffee always attempts to find the best
+          possible flavor combinations and we invite our customers to trust us, to have a rewarding experience thanks to
+          the wide variety of products that we offer.
+        </p>
+        <img src="img/mision.jpg" >
+      </div>
+
+    </div>
+
+    <div class="story">
+      <h1>OUR STORY</h1>
+      <div class="storyItems">
+        <img src="img/evolucion.jpg">
+
+        <p class="storyText">
+          Our beginnings return to a small dream among several friends of creating a small business in our hometown,
+          Santa
+          Clara.
+          Step by step, our business expanded throughout the city thanks to the support of all our customers and we
+          finally
+          managed to open several establishments around the city, becoming the most important coffee chain in Santa
+          Clara.
+          Finally,
+          after obtaining great repercussions in the sector, we have expanded throughout the county, being one of the
+          leading coffee
+          shops in the state of California
+        </p>
+      </div>
+
+    </div>
+    <div class="location">
+      <h1>FIND US</h1>
+      <div class="locationItems">
+        <iframe class="ubication"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50733.76767971713!2d-121.95844651172473!3d37.369478050144636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7815c08c193%3A0xe475a47ca3c0bfc0!2sSanta%20Clara%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1652076806253!5m2!1ses!2ses"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="entry.html">
+              <img src="img/Background.png" alt="Logo Tropical">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>CONTACT US</h2>
+          <p>+1 408-736-1495</p>
+          <p>tropicalcoffe@tropical.com</p>
+        </div>
+        <div class="box">
+          <h2>FOLLOW US</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy;2022 <b>Tropical Café S.L.</b> - All Rigths Reserved To.</small>
+      </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="./js/nav.js"></script>
+
+<script src="./js/localStorage.js" type="text/javascript"></script>
+</html>

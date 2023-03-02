@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Café</title>
+    <link type="text/css" rel="stylesheet" href="./css/entry.css">
+    <link type="text/css" rel="stylesheet" href="./css/entry-responsive.css">
+    <link rel="icon" href="./img/logoTropical2.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Imports necesarios para poder usar los iconos fast fa fonts
+      link a la pagnia de los iconos : https://fontawesomeicons.com/ -->
+      <script src="https://kit.fontawesome.com/0ff74634d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="cafesIntroDisplay();">
+  <!-- Este NAV lo tendrán TODAS las páginas -->
+    <div>
+      <nav>
+        <ul>
+          <li class="logo"><a href="entry.html"><img src="./img/logoTropical.png" /></a></li>
+          <li class="items"><a href="entry.html">Home</a></li>
+          <li class="items"><a href="catalogue.html">Catalogue</a></li>
+          <li class="items"><a href="about-us.html">About us</a></li>
+          <li class="items" id="joinUs" ><a href="JoinUs.html">Join us</a></li>
+          <li class="items"style="width:70px"><a href="register.html"><input type="button" id="signUp" value="SIGN UP"
+                class="botonLog" /></a></li>
+                
+          <li class="items"><a href="login.html"><input type="button" id="logIn"  value="LOG IN" class="botonLog" /></a></li>
+          <li class="items"><a href="user-area.html">
+            <div id="contenedorBotones">
+            
+          </div>
+           
+          </a></li>
+        
+          <li class="btn"><a href="#"><i class='fas fa-bars' style='color:#000000'></i></a></li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+
+    <div id="containerMain">
+      <div id="containerLeft">
+        <img src="./img/logoTropicalWhite.png"/>
+        <br>
+        <h1>FEEL THE TROPIC</h1>
+        <br>
+        <br>
+        <p>
+          Find the most exotic cafes here in Tropical Café.<br>
+          Your mind will blow away with our bartender's coffe art works.<br>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Be exotic, be Tropical.</h2>
+      </div>
+      <div id="containerRight">
+        <div id="rightTitle">
+          <h1> Best sellers</h1>
+        </div>
+        <div id="slider">  
+          <div id="insertImg">
+
+            <div class="slide">
+             <!-- <img src="./img/1.png" /> -->
+            </div>
+            <div class="slide">
+             <!-- <img src="./img/2.png" /> -->
+            </div>
+            <div class="slide">
+             <!-- <img src="./img/3.png" /> -->
+            </div>
+            <div class="slide">
+            <!--  <img src="./img/5.png" /> -->
+            </div>  
+            <!-- Flechas para controlar las imágenes -->
+          </div>
+          <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true" style="color: white;"></i>
+          </span>
+          <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true" style="color: white;"></i>
+          </span>
+        </div>
+          <div id="dots-con">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <br>
+          <br>
+          <a href="catalogue.html"><input type="button" value="SEE MORE" id="catalogueButton"/></a>
+         
+          
+        </div>
+        
+          
+      </div>
+  
+      
+      
+    </div>
+
+    
+
+    
+    
+    
+    <!-- A PARTIR DE AQUÍ EN CADA PÁGINA SERÁ DIFERENTE -->
+
+
+
+      
+      <script src="./js/nav.js"></script>
+      <script src="./js/entry.js"></script>
+      <script src="./js/localStorage.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+
+
+
+</html>

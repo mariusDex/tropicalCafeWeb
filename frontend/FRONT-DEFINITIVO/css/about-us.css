@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+html{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  
+
+
+  animation: animationFrames ease 0.3s;
+animation-iteration-count: 1;
+transform-origin: 50% 50%;
+animation-fill-mode:forwards; /*when the spec is finished*/
+-webkit-animation: animationFrames ease 0.3s;
+-webkit-animation-iteration-count: 1;
+-webkit-transform-origin: 50% 50%;
+-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+-moz-animation: animationFrames ease 0.3s;
+-moz-animation-iteration-count: 1;
+-moz-transform-origin: 50% 50%;
+-moz-animation-fill-mode:forwards; /*FF 5+*/
+-o-animation: animationFrames ease 0.3s;
+-o-animation-iteration-count: 1;
+-o-transform-origin: 50% 50%;
+-o-animation-fill-mode:forwards; /*Not implemented yet*/
+-ms-animation: animationFrames ease 0.3s;
+-ms-animation-iteration-count: 1;
+-ms-transform-origin: 50% 50%;
+-ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+
+@keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+  body{
+      background-image:url('../img/fondo_prueba2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+
+  nav{
+    background: #f8f8f8;
+    padding: 0px 0px;
+    font-weight: 1000;
+    width: 100%;
+  }
+  nav img{
+      width: 100px;
+      margin: 0;
+      cursor: pointer;
+      padding: 0px;
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+   
+  }
+  nav ul li{
+    padding: 0px 0px;
+    
+  }
+  nav ul li.items{
+    position :relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+    cursor: pointer;
+  }
+  /*nav ul li.items:after{
+    
+    position: relative;
+    content: '';
+    left: 0;
+    bottom: 2px;
+    height: 2px;
+    width: 100%;
+    background: rgb(12, 175, 86);;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }*/
+  nav ul li.items:hover:after{
+    opacity: 1;
+    bottom: 8px;
+  }
+  nav ul li.logo{
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    
+    user-select: none;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    
+  }
+  nav ul li:hover a{
+    color: #0eb654;
+  }
+  nav ul li i{
+    font-size: 23px;
+  }
+  nav ul li.btn{
+    display: none;
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+
+  .botonLog{
+    width: 95px;
+    font-size: 15px;
+    font-weight: 1000;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    
+    color: white;
+    cursor: pointer;
+  }
+
+  #logIn{
+    background-color: white ;
+    border: 2px solid black;
+    color: black;
+  }
+
+  #logIn:hover{
+    background-color: rgb(48, 172, 10) ;
+    color: white;
+    border: none;
+    
+
+  }
+  #signUp{
+    border: 2px solid black;
+    color: black;
+  }
+  #signUp:hover{
+    background-color : black;
+    color : white;
+  }
+
+  #contenedorBotones{
+    display: inline-flex;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pie-pagina{
+    width: 100%;
+    background-color: rgb(254, 255, 254);
+    text-align: center;
+    color: black;
+    margin-top: 20%;
+}
+
+.pie-pagina .grupo-1{
+    
+    margin-top: 1%;
+    display: inline-flex;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: black;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 300ms ease;
+    border: 1.5px solid black;
+    border-radius: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: black;
+}
+
+.pie-pagina .grupo-2{
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.story{
+  text-align: center;
+}
+
+.storyItems{
+    
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: inline-flex;
+}
+.storyItems img{
+    margin-top: 5%;
+    width: 350px;
+}
+
+.storyText{
+    
+    width: 500px;
+    text-align: justify;
+    margin-left: 13%;
+    margin-top: 3%;
+    font-size: 110%;
+}
+
+.objective{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.objectiveItems{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: inline-flex;
+}
+.objectiveItems img{
+    margin-top: 2%;
+    width: 350px;
+}
+
+.objectiveText{
+    
+    width: 500px;
+    text-align: justify;
+    margin-right: 13%;
+    margin-top: 3%;
+    font-size: 110%;
+}
+
+.locationItems{
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.about{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: block;
+    text-align: center;
+}
+.about img{
+  border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.ubication{
+  width: 600px;
+  height: 450px;
+}
